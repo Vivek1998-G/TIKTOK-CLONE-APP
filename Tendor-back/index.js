@@ -4,7 +4,7 @@ import Videos from './dbModel.js'
 import Corse from 'cors'
 
 const app=express()
-const PORT = process.env.PORT || 9000;
+const port = process.env.PORT || 9000;
 const connect_url="mongodb+srv://Vivek_Gawande:Vivek1234@cluster0.idhm5iz.mongodb.net/?retryWrites=true&w=majority";
 app.use(express.json())
 app.use(Corse())
@@ -43,4 +43,4 @@ app.get('/v2/posts',(req,res)=>{
     })
 })
 
-app.listen(PORT,console.log("app listen on "+{PORT}))
+app.listen(port,console.log("app listen on "+{PORT}))

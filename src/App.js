@@ -9,7 +9,7 @@ const [videos,setVideos]=useState([])
 
 useEffect(()=>{
   async function fetchdata(){
-    const res=await axios.get(" http://localhost:9000/v2/posts")
+    const res=await axios.get(" https://jumpsuit-agouti.cyclic.app/v2/posts")
     setVideos(res.data)
     return res;
   }
